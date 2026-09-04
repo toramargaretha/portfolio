@@ -139,6 +139,17 @@ body {
     box-shadow: 0 20px 40px rgba(92, 107, 74, 0.15);
 }
 
+.featured-project:hover { box-shadow: 0 20px 40px rgba(61, 74, 45, 0.24); }
+.project-kicker { color: #F3B39A; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.project-tag { background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 999px; color: #FAF8F5; font-size: 0.75rem; padding: 0.35rem 0.7rem; }
+.featured-details { border-left: 1px solid rgba(255, 255, 255, 0.18); padding-left: 2rem; }
+.featured-stat { background: rgba(255, 255, 255, 0.08); border-radius: 0.75rem; display: flex; flex-direction: column; padding: 1rem; }
+.featured-stat strong { color: #F3B39A; font-family: 'Playfair Display', serif; font-size: 1.8rem; line-height: 1; }
+.featured-stat span { color: rgba(250, 248, 245, 0.7); font-size: 0.75rem; margin-top: 0.4rem; }
+.featured-details ol { list-style: none; margin: 0; padding: 0; }
+.featured-details li { align-items: flex-start; display: flex; gap: 0.65rem; }
+.featured-details li span { color: #F3B39A; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; padding-top: 0.1rem; }
+
 .skill-tag {
     transition: all 0.3s ease;
     cursor: default;
@@ -267,4 +278,8 @@ a:focus-visible, button:focus-visible {
     height: 3px;
     background: linear-gradient(90deg, var(--accent), var(--terracotta));
     border-radius: 2px;
+}
+
+@media (max-width: 1023px) {
+    .featured-details { border-left: 0; border-top: 1px solid rgba(255, 255, 255, 0.18); padding-left: 0; padding-top: 1.5rem; }
 }
